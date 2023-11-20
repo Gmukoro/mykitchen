@@ -74,6 +74,15 @@ const Navbar = () => {
                 <a href="#contact">Contact</a>
               </li>
             </ul>
+            <div className="app__navbar-login_small ">
+              <a href="#login" className="p__opensans">
+                Log In/Register
+              </a>
+              <a href="/" className="p__opensans">
+                Book Table
+              </a>
+              <div />
+            </div>
           </div>
         )}
       </div>

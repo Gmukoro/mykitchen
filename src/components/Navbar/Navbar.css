@@ -96,7 +96,18 @@
   font-family: var(--font-base);
 }
 
-.app__navbar-smallscreen_links li:hover {
+.app__navbar-login_small a {
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  color: var(--color-golden);
+  font-size: 2rem;
+  text-align: center;
+  font-family: var(--font-base);
+}
+
+.app__navbar-smallscreen_links li:hover,
+.app__navbar-login_small a:hover {
   color: var(--color-white);
 }
 
@@ -113,6 +124,9 @@
   .app__navbar-smallscreen {
     display: flex;
   }
+  .app__navbar-login_small {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -124,5 +138,12 @@
   }
   .app__navbar-logo {
     width: 110px;
+  }
+
+  .app__navbar-login_small {
+    display: flex;
+    text-wrap: wrap;
+    flex-direction: column;
+    margin: 0;
   }
 }
